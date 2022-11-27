@@ -1,0 +1,1363 @@
+/* Con esto quitamos los margenes y quitamos el espacio blanco extra en pantalla */
+html,body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+/* Style the search field */
+form.btnBuscarA input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  /* Style the submit button */
+  form.btnBuscarA button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+  form.btnBuscarA button:hover {
+    background: #0b7dda;
+  }
+
+  /* Clear floats */
+  form.btnBuscarA::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Header, con pequeños cambios como el tamaño y sin espacios extras */
+body>header{
+    flex-direction: row;
+    background: rgb(17, 67, 88);
+	width: 100vw;
+	height: 125px;
+	overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* Maomenos lo mismo que lo de arriva, el vw en width es para que se acomode a la pantalla o algo asi */
+.innerFooter{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+
+}
+.logo{
+    position: relative;
+	float:left;
+    left: 10%;
+    top: 10%;
+}
+/* En teoria ya no se usa, pero lo dejamos por si sirve */
+.logoT{
+    position: relative;
+    top: 50px;
+    /*width: 35%;
+    height: 20%;*/
+}
+.logoS{
+    position: relative;
+    /*margin-top: 80px;
+    width: 20%;*/
+}
+.busqueda{
+
+    position: relative;
+    right: 600px;
+    margin-top: 50px;
+    size: 600px;
+}
+.busquedaTxt{
+    position: relative;
+    font-size: 30px;
+    right: 8%;
+}
+.busquedaBtn{
+    position: relative;
+    left: 13%;
+    bottom: 36px;
+    width: 10%;
+    font-size: 22px;
+}
+.nav{
+    position: relative;
+	float:right;
+    right: 10%;
+    top: 10%;
+	line-height: 100px;
+}
+header nav img{
+    position: relative;
+	display:inline-block;
+	height: 100px;
+	width: auto;
+	object-fit: fill;
+}
+#cerrarSesionBtn{
+    float: right;
+    position: relative;
+    right: 10%;
+    background-color: rgb(272, 170, 31);
+    color: black;
+    border: none;
+    margin: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*Esta es la tabla de productos*/
+body>main{
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#componentes img{
+	width: 95px;
+}
+#componentes p{
+	text-align: center;
+	font-family: Arial;
+	font-size: 12px;
+}
+#componentes td
+{
+	background-color: Snow;
+}
+#slider{
+    width: 1140px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cuerpo{
+    background-color: rgb(255, 255, 255);
+    width:100vw;
+    margin: 0;
+}
+#info{
+	position: relative;
+    width: 100vh;
+    margin: 0;
+}
+.Vmas{
+	position: relative;
+	color: black;
+	/*style colspan="4" */
+	background-color: rgb(255, 255, 255);
+	font-size: 30px;
+	/*float: left;*/
+	right: 300px;
+	bottom: 0.5px;
+
+
+}
+#productos{
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(253, 253, 253);
+   /* border: 1px solid black;*/
+    color: black;
+    table-layout: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+	border-collapse: separate;
+  	border-spacing: 75px 0px;
+
+}
+.precio{
+	position: relative;
+	left: 80px;
+
+}
+.ProdMarco{
+	position: relative;
+	border: .8px solid rgb(223, 203, 203);
+	height: 200px;
+	width: 400px;
+}
+.ProdMarco>p{
+    text-align: center;
+}
+#Usuario{
+    margin-left: auto;
+    margin-right: auto;
+}
+#componentes img{
+	width: 95px;
+}
+#componentes p{
+	text-align: center;
+	font-family: Arial;
+	font-size: 12px;
+}
+#componentes td
+{
+	background-color: Snow;
+}
+#slider{
+	position: center;
+}
+.menu, .subMenu
+{
+	padding-inline-start: 0px;
+	color: white;
+	background: rgb(17, 67, 88);
+
+	/*border-color: #555555;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 10px;*/
+}
+.menuItem, .subMenuItem{
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+	font-family: Arial;
+	color: white;
+	font-size: 25px;
+	width: 225px;
+	padding-right: 6.8px;
+}
+.menuItem:hover{
+	color: gray;
+	background-color: white;
+}
+.subMenu{
+	position: absolute;
+	display: none;
+}
+.subMenuItem{
+	display: block;
+}
+.subMenuItem:hover{
+	background-color: black;
+}
+.VenEstilo{
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	position:absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    display: none;
+	margin-left: auto;
+	margin-right: auto;
+	border: #353333;
+	border-width: 8px;
+	border-style: solid;
+	align-items: center;
+	align-self: center;
+}
+/*Aqui agregue los estilos de las tarjetas*/
+.principalTitulos{
+     position: relative;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     size: 50px;
+}
+/*Este es el pie de pagina, pequeños cambios extra, similar al header*/
+body>footer{
+	position: bottom;
+    display: block;
+    width: 100vw;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 30px;
+	right: 50px;
+	background-color: rgb(272, 170, 31);
+	color: black;
+
+}
+.PieImg{
+	position: relative;
+	left: 20px;
+    top: 10%;
+}
+.PieRedes{
+	position: relative;
+	left:  370px;
+	bottom: 200px;
+    width: 400px;
+	font-size: 30px;
+	border-style: none;
+}
+/* Para que lo de las redes este lo mas en el centro posible */
+.PieRedes{
+    left: 40%;
+}
+.imgPie{
+	max-width: 100px;
+	max-height: 100px;
+}
+.PiePago{
+	position: relative;
+	bottom: 400px;
+	font-size: 30px;
+}
+/* Con esto todo lo de los metodos de pago se acomoda automaticamente a la derecha */
+.PiePagoA{
+    float: right;
+}
+
+/*Pedidos, carrito, historial*/
+.encabezado{
+    font-size: 25px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.imgPedido{
+    position: relative;
+    left: 70px;
+}
+.nombrePe{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+}
+.cantidadPe{
+    position: relative;
+    text-align: right;
+    font-size: 25px;
+    left: 5%;
+}
+.precioPe{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    left: 35%;
+}
+#quitarDeCarritoBtn{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    left: 35%;
+}
+/*Compra*/
+
+.quitarBtn{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    left: 25%;
+}
+#comprar{
+    position: relative;
+    left: 25%;
+}
+#total{
+    position: relative;
+
+    text-align: left;
+    font-size: 60px;
+
+
+}
+#comprarBtn{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    left: 25%;
+
+}
+
+#carTitulo{
+    position: relative;
+    left: 10%;
+    font-size: large;
+}
+
+/*producto*/
+#prod{
+   /* background-color: green; /*quitar esto luego*/
+    border: solid;
+    height: 100%;
+	width: 100%;
+}
+#prodImg{
+    position: relative;
+    width: 27.8%;
+    height: 520px;
+    border: solid;
+    left: 8%;
+    top: 50px;
+
+
+}
+#prodR{
+	width: 100%;
+	height: 100%;
+}
+#prodInf{
+    position: relative;
+    left: 50%;
+    bottom: 500px;
+}
+#prodSinopsi{
+    width: 100%;
+
+   /* background-color: red;*/
+    position: relative;
+    bottom: 370px;
+    left: 8%;
+}
+#sinopsis{
+    font-size: 30px;
+    width: 80%;
+    border: solid;
+   /* font-family: Arial, Helvetica, sans-serif;*/
+
+}
+#titulo{
+    position: relative;
+    right: 10%;
+    font-size: 70px;
+    width: 57%;
+    border: solid;
+}
+#autor{
+    position: relative;
+    right: 10%;
+    font-size: 50px;
+    width: 28%;
+    border: solid;
+}
+#genero{
+    position: relative;
+    left: 20%;
+    bottom: 90px;
+    font-size: 40px;
+    width: 28%;
+    border: solid;
+}
+#pre{
+    position: relative;
+    left: 6%;
+    bottom: 90px;
+    font-size: 60px;
+    width: 28%;
+    border: solid;
+}
+#agregarAlCarritoBtn{
+    position: relative;
+    left: 3%;
+    font-size: 50px;
+    width: 28%;
+    border: solid;
+}
+#agregarDeseadosBtn{
+    position: relative;
+    left: 7%;
+    font-size: 45px;
+    width: 30%;
+    top: 10px;
+    border: solid;
+}
+#numeroUsuario{
+    display: none;
+}
+
+/*registro usuario*/
+
+
+
+/*Registro producto*/
+
+
+#regProducto{
+    height: 800px;
+    width: 600px;
+    border: none;
+}
+#regProdImg{
+    top: 60px;
+    position: relative;
+    left: 10%;
+
+    width: 30%;
+    border: solid;
+
+}
+#regImg{
+    position: relative;
+    left: 25%;
+    top: 10px;
+    width: 100%;
+
+}
+#subProdImg{
+    position: relative;
+    right: 0%;
+    top: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+#regProdGeneral{
+    position: relative;
+    left: 45%;
+    bottom: 500px;
+}
+.inpTeFormato{
+    font-size: 16px;
+}
+#subDatosFactProd1{
+    position: relative;
+    top: 20px;
+    width: 27%;
+}
+#subDatosFactProd2{
+    position: relative;
+    top: 20px;
+    width: 27%;
+    margin: 5px 0 10px 0;
+}
+#subNombreProd{
+    position: relative;
+    top: 20px;
+}
+#subNombreProd2{
+    position: relative;
+    top: 20px;
+}
+#subAutorProd{
+    position: relative;
+    top: 20px;
+}
+#subSelectProd{
+    position: relative;
+    top: 20px;
+}
+#subSinopsisProd{
+    position: relative;
+    top: 20px;
+}
+#subCantidadProd{
+    position: relative;
+    top: 20px;
+    width: 40%;
+    float: left;
+}
+#subPrecioProd{
+    position: relative;
+    top: 20px;
+    width: 40%;
+    float: right;
+    margin: 5px 0 10px 0;
+}
+#registro{
+    position: relative;
+    left: 44%;
+    bottom: 450px;
+
+}
+.formaReg{
+    font-size: 150%;
+    width: 20%;
+}
+#subCodigoProd{
+    position: relative;
+    top: 20px;
+}
+#subProd{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*C O N F I R M A R  V E N T A*/
+#venta{
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ventaTitle{
+    font-size: 35px;
+}
+
+#direc{
+    width: 40%;
+    margin: 5px;
+}
+#metPago{
+    margin: 5px;
+}
+#confirmarVenta{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.flex1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex2{
+    display: flex;
+    flex-direction: column;
+}
+
+#acomodar{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 5px;
+}
+.uno{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-align: end;
+    align-self: center;
+}
+.dos{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 5px;
+}
+
+.formVenta input[type=text]{
+    position: relative;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+#cancelarVenBtn{
+    position: relative;
+    float: left;
+    font-size: 15px;
+    width:150px;
+    height: 25px;
+    border: solid;
+    background-color: #911212;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+#cancelarVenBtn:hover{
+    background-color: #c02b2b;
+}
+#confirmarVenBtn{
+    position: relative;
+    float: left;
+    font-size: 15px;
+    width:150px;
+    height: 25px;
+    border: solid;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+#confirmarVenBtn:hover{
+    background-color: #38763a;
+}
+/*F I N  C O N F I R M A R  V E N T A*/
+/* L O G I N */
+.login{
+    background-color: #dbd280a0;
+    border-radius: 15px;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+.textoLogRegis{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.formLabel{
+    margin-left: 80px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.disclamer{
+    text-align: center;
+    margin: 10px 50px 20px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.logRegis input[type=text], select{
+    position: relative;
+    width: 400px;
+    padding: 10px;
+    margin: 5px 0 5px 80px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+
+}
+form.logRegis input[type=number]{
+    position: relative;
+    width: 400px;
+    padding: 10px;
+    margin: 5px 0 5px 80px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+form.logRegis input[type=password], select{
+    width: 400px;
+    padding: 10px;
+    margin: 5px 0 10px 80px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+form.logRegis input[type=submit]{
+    width: 50%;
+    background-color: #114358ec;
+    color: white;
+    border: none;
+    margin: 10px 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+form.logRegis input[type=button]{
+    width: 50%;
+    background-color: #114358ec;
+    color: white;
+    border: none;
+    margin: 10px 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+#confirmarBtn, #registrarseBtn{
+    text-align: center;
+    font-size: 20px;
+}
+/* F I N   L O G I N */
+/* R E G I S T R O  U S U A R I O S*/
+.registroUsuario{
+    background-color: #dbd280a0;
+    border-radius: 15px;
+    width: 600px;
+    height: 850px;
+    margin: auto;
+}
+#Registrarse{
+    text-align: center;
+    font-size: 20px;
+    top: 180px
+;}
+form.logRegis input[type=date]{
+    width: 400px;
+    padding: 20px;
+    margin: 5px 0 10px 80px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+/* F I N  R E G I S T R O  U S U A R I O S*/
+/* S L I D E R */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* F I N   S L I D E R */
+/* P R O D U C T O S   P R I N C I P A L */
+.productosP{
+    background-color: #dbd280a0;
+    border-radius: 15px;
+    width: 80vw;
+    height: 270px;
+    margin: auto;
+}
+/* F I N   P R O D U C T O S   P R I N C I P A L */
+/*D E T A L L E  P R O D U C T O*/
+#prod{
+    position: relative;
+    border: none;
+	width: 80%;
+    background-color: #dbd280a0;
+    border-radius: 15px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+.prodImg{
+    position: relative;
+    width: 40%;
+    border: 5px solid;
+    border-radius: 25px;
+    margin: 10px;
+}
+.pI{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.guiaProd{
+    margin: 5px;
+}
+.prodInf{
+    position: relative;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.tituloInfo{
+    font-size: 45px;
+    width: 100%;
+    margin: auto;
+}
+.generoInfo, .autorInfo{
+    font-size: 20px;
+    width: 30%;
+    position: relative;
+}
+.resul{
+    color: #114358ec;
+}
+.preInfo{
+    font-size: 25px;
+    width: 40%;
+    position: relative;
+}
+.sinopsis{
+    position: relative;
+    width: auto;
+    max-width: fit-content;
+}
+.btnForms{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btnCarAdd, .btnWishAdd{
+    margin: 5px;
+}
+.alingInf{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#agregarAlCarritoBtn, #agregarDeseadosBtn{
+    position: relative;
+    float: left;
+    font-size: 15px;
+    width:180px;
+    height: 40px;
+    border: solid;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#agregarAlCarritoBtn:hover, #agregarDeseadosBtn:hover{
+    background-color: #38763a;
+}
+#numeroUsuario{
+    display: none;
+}
+/*F I N  D E T A L L E  P R O D U C T O*/
+/*H O M E  A D M I N*/
+#adminHome{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+}
+.DER{
+    width: 100%;
+    margin: auto;
+}
+#logoChido{
+    width: 80%;
+    margin: 20px 0 0 100px;
+}
+.AdminText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+#fecha{
+    margin-left: 320px;
+}
+form.menuIzquierda input[type=button]{
+    width: 180px;
+    height: 120px;
+    background-color: #114358ec;
+    color: white;
+    border: none;
+    margin: 1px 2px 1px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    font-style: oblique;
+}
+.btn:hover{
+    background-color: #114358b0;
+}
+/*F I N  H O M E  A D M I N*/
+/*P E R F I L  U S U A R I O*/
+.perfilUsuario{
+    background-color: #dbd280a0;
+    border-radius: 15px;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.perfil{
+    margin: auto;
+    width: 80%;
+}
+.perfil input[type="text"], input[type="tel"], input[type="number"], select#direccion{
+    border: 1px solid #ccc;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 15px;
+}
+.perfil input[type=submit], form.perfil input[type=button]{
+    width: 150px;
+    font-size: 20px;
+    background-color: #114358ec;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+.perfil input[type=submit]:hover, form.perfil input[type=button]:hover{
+    background-color: #114358b0;
+}
+.txtInf{
+    font-size: 25px;
+}
+.userFlexPadre{
+    display: flex;
+    flex-direction: column;
+}
+.flexSon{
+    display: flex;
+    margin: 2px;
+}
+.infoLabel, .buttonsUser{
+    font-size: 20px;
+    align-self: center;
+}
+.tam{
+    width: 100%;
+}
+/*F I N  P E R F I L  U S U A R I O*/
+/* P E D I D O S */
+.pedidosRow{
+    position: relative;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    height: 300px;
+    margin: 2px;
+}
+.pedidosImg{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+div.pedidosRow p{
+    margin: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    padding: 0 5px;
+}
+div.pedidosRow input[type=submit],div.pedidosRow input[type=button]{
+    display: flex;
+    text-align: center;
+    width: auto;
+    background-color: rgb(272, 170, 31);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 5px 0 10px 69px;
+}
+div.pedidosRow select#subSelectProd{
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    margin: 5px 0 5px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.usuarioDiv{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 380px;
+    background-color: white;
+    border-radius: 15px;
+    height: 30px;
+}
+div.pedidosRow input[type=text]{
+    position: relative;
+    width: 380px;
+    padding: 10px;
+    margin: 5px 0 5px 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+div.pedidosRow input[type=date]{
+    width: 400px;
+    padding: 20px;
+    margin: 5px 0 10px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+/* F I N   P E D I D O S */
+/*C A R R I T O / D E S E A D O S*/
+#generalCar{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.titleCar{
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tableCarMarco{
+    width: 60%;
+}
+#acomodarCarTable{
+    background-color: #dbd280a0;
+    border-radius: 15px;
+    display: flex;
+}
+#imgCar{
+    align-self: center;
+    border: solid;
+    margin: 10px 10px 10px 10px;
+    width: 100px;
+    border-radius: 15px;
+}
+.titleCarP{
+    font-size: 25px;
+}
+.priceCarP{
+    max-width: 25%;
+    font-size: 18px;
+    color: #114358ec;
+}
+.pos{
+    max-width: 25%;
+    margin: 10px 0 0 0;
+}
+#quitarCar{
+    position: sticky;
+    margin: 0 0 0 700px;
+    background-image: url("/imagenes/eliminar_1.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 37px;
+    height: 42px;
+    cursor: pointer;
+    border: none;
+}
+#buyMyCar{
+    width: 40%;
+    align-self: center;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.palabrasCar{
+    display: flex;
+    width: 60%;
+}
+.numCar{
+    display: flex;
+    width: 40%;
+    justify-content: end;
+}
+#buttonsCar{
+    display: flex;
+    justify-content: center;
+}
+#btnComprar{
+    font-size: 15px;
+    width:120px;
+    height: 30px;
+    border: solid;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btnComprar:hover{
+    background-color: #38763a;
+}
+/*F I N  C A R R I T O / D E S E A D O S*/
+/*H I S T O R I A L / P E D I D O S*/
+#hisTitulo{
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#pedidos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: #D9D9D9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#generalHis{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#acomodarHisTable{
+    width: 90%;
+    margin: 15px;
+    background-color: #dbd280a0;
+    border-radius: 15px;
+    display: flex;
+}
+.acomodarDesmadre{
+    display: flex;
+    width: 90%;
+    margin-top: 5px;
+    align-self: center;
+    background-color: #6c6b6b9d;
+}
+.fechaHis{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-self: center;
+    margin: 5px;
+}
+#imgHis{
+    align-self: center;
+    margin: 10px 10px 10px 10px;
+    width: 15%;
+    border-radius: 10px;
+}
+.formsVer{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+#ver{
+    font-size: 15px;
+    width:125px;
+    height: 30px;
+    border: solid;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#ver:hover{
+    background-color: #38763a;
+}
+/*F I N  H I S T O R I A L / P E D I D O S*/
+/*F A C T U R A S*/
+.flexFact{
+    display: flex;
+    justify-content: center;
+}
+#subProdFact{
+    font-size: 15px;
+    margin: 5px 5px 5px 5px ;
+}
+div.pedidosRow input[type=submit]:hover, div.pedidosRow input[type=button]:hover{
+    background-color: #f29e1f;
+}
+.flexFact1{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+#datosFact{
+    position: relative;
+    width: 27%;
+}
+div.flexFact1 input[type=number], div.flexFact1 input[type=date], div.flexFact1 input[type=text]{
+    position: relative;
+    width: 25%;
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+/*F I N  F A C T U R A S*/
+/* P A G I N A C I O N */
+.pagination {
+    display: block;
+    margin-inline: auto;
+    width: max-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: auto;
+  }
+
+  .pagination a {
+    font-size: 22px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+
+  .pagination a.active {
+    background-color: rgb(17, 67, 88);
+    color: white;
+    border: 1px solid rgb(17, 67, 88);
+  }
+
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  .pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+/* F I N   P A G I N A C I O N */
+
+
